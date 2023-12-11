@@ -1,0 +1,28 @@
+<header class="header" data-header>
+  <div class="container">
+    <h2 class="fs-1" style="color: black; font-size: 28px;"><strong>Nirantharika Selvachandran</strong></h2>
+    <nav class="navbar" data-navbar [ngClass]="status ? 'active' : ''">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a routerLink="/home" class="label-lg navbar-link has-after" routerLinkActive="active">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/education" class="label-lg navbar-link has-after" routerLinkActive="active">Education&Experience</a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/service" class="label-lg navbar-link has-after" routerLinkActive="active">Services</a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/portfolio" class="label-lg navbar-link has-after" routerLinkActive="active">Portfolio</a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/contact" class="label-lg navbar-link has-after" routerLinkActive="active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler (click)="addToggle()">
+      <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+    </button>
+  </div>
+</header>
